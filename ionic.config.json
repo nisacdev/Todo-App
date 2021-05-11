@@ -1,5 +1,7 @@
 {
   "name": "Todo-List-App",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
