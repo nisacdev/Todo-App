@@ -1,9 +1,25 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>add</ion-title>
+  <ion-toolbar color="danger">
+    <ion-title>Hatırlatma Ekle</ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/']" routerLinkActive="router-link-active" >
+        İptal
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-item>
+    <ion-label position="floating">Başlık</ion-label>
+    <ion-input  [(ngModel)]="todo" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Kısa Açıklama</ion-label>
+    <ion-textarea [(ngModel)]="todo")]></ion-textarea>
+  </ion-item>
+  <ion-button color="danger" expand="full" (click)="addTodo()">
+    <ion-icon slot="start" name="add"></ion-icon>
+    Ekle
+  </ion-button>
 </ion-content>
